@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Models\AppointmentTime;
 use App\Models\Event;
 use Illuminate\Database\Migrations\Migration;

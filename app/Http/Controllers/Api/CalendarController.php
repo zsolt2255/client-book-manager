@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
@@ -14,6 +16,9 @@ use Illuminate\Http\Response;
 
 class CalendarController extends Controller
 {
+    /**
+     * @param EventService $eventService
+     */
     public function __construct(private readonly EventService $eventService)
     {
 

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
 use App\Http\Services\EventService;
@@ -20,7 +22,7 @@ class EventSeeder extends Seeder
         $eventService = app()->make(EventService::class);
 
         foreach ($appointmentTimes as $appointmentTime) {
-            $eventService->generateAndStoreFromApptTime($appointmentTime);
+            $eventService->generateAndStoreFromAppTime($appointmentTime);
         }
     }
 }

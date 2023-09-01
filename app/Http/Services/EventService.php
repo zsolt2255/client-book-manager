@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Services;
 
 use App\Http\Requests\StoreEventRequest;
@@ -85,7 +87,7 @@ class EventService
      * @param AppointmentTime $appointmentTime
      * @return void
      */
-    public function generateAndStoreFromApptTime(AppointmentTime $appointmentTime): void
+    public function generateAndStoreFromAppTime(AppointmentTime $appointmentTime): void
     {
         $events = collect();
 

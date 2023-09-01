@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Resources;
 
 use Illuminate\Contracts\Support\Arrayable;
@@ -7,6 +9,9 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class EventResourceCollection extends ResourceCollection
 {
+    /**
+     * @var null
+     */
     public static $wrap = null;
 
     /**
